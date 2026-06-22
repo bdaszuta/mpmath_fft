@@ -1,0 +1,25 @@
+.vscode
+__pycache__
+.mypy_cache
+.pytest_cache
+
+*.pyc
+*.pyo
+*.png
+*.bak
+*.egg-info
+
+*.xz
+# .*
+
+# *.txt
+# *.md
+
+# Project-specific overrides
+!README.md
+!LICENSE
+!*.png
+
+# Sphinx
+docs/build/
+

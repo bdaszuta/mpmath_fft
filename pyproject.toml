@@ -1,0 +1,23 @@
+[project]
+name = "mpmath_fft"
+version = "0.1.0"
+description = "Arbitrary-precision FFT for mpmath"
+requires-python = ">=3.10"
+dependencies = [
+  "mpmath>=1.3",
+  "numpy>=1.24",
+]
+license = "BSD-3-Clause"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["mpmath_fft*"]
+
+[tool.ruff.lint]
+select = ["E", "F"]
+
+[tool.setuptools.package-data]
+mpmath_fft = ["py.typed"]
